@@ -174,7 +174,7 @@ class ITunesSearch extends BaseSearch {
           final results = json.decode(response.data);
 
           if (results['results'] != null) {
-            if(results['results'][0].length > 0) {
+            if(results['results'].length > 0) {
               var item = Item.fromJson(json: results['results'][0]);
 
               items.add(item);
