@@ -222,7 +222,8 @@ class ITunesSearch extends BaseSearch {
     buf.write(_limit);
 
     if (_genre != '') {
-      var g = _genres[_genre];
+      //var g = _genres[_genre];
+      var g = _genre;
 
       if (g != null) {
         buf.write('/genre=$g');
